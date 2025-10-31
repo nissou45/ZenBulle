@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zenbulle</title>
+    <!--polices et feuilles de style-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Edu+SA+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="variables.css" />
+    <link rel="stylesheet" href="page-insription.css" />
+  </head>
+  <body>
+    <main class="inscription-container">
+      <div class="form-header">
+        <h1 class="titre principal">s'inscrire</h1>
+        <p class="texte-slogan">
+          crée ta bulle en quelques secandes<br />juste pour toi...
+        </p>
+      </div>
+
+      <form class="form-inscription">
+        <input type="text" name="prénom" placeholder="prénom" required />
+        <input type="email" name="email" placeholder="e-mail" required />
+        <input
+          type="password"
+          name="modepasse"
+          placeholder="mode passe"
+          required
+        />
+        <input
+          type="password"
+          name="confirmation"
+          placeholder="confirme ton mode passe"
+          required
+        />
+        <button type="submit">créer ma bulle</button>
+      </form>
+      <div class="footer">
+        <p class="connexion">déjà un compte? <a href="#">se connecter</a></p>
+      </div>
+    </main>
+  </body>
+</html>
