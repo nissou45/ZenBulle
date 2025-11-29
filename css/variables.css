@@ -1,0 +1,27 @@
+:root {
+  /*  Couleurs */
+  --couleur-primaire: #c7ab9b;
+  --couleur-secondaire: #d09e61;
+  --couleur-texte: #a85100;
+  --couleur-noir: black;
+  --couleur-claire: white;
+  --linear-gradient: linear-gradient(white 60%, #e3d5cd 81%, #c7ab9b);
+
+  /*  Polices */
+  --font-principale: "Edu SA Beginner", cursive;
+  --font-titres: "Caveat Brush", cursive;
+
+  /* Tailles de police */
+
+  --taille-texte: 1em; /* ≈ 16px */
+  --taille-titre: 3rem; /* ≈ 32px */
+  --taille-sous-titre: 2rem; /* ≈ 24px */
+  --taille-petit-texte: 0.875rem; /* ≈ 14px */
+
+  /*  Espacements (padding / margin) */
+  --padding-petit: 0.5rem;
+  --padding-moyen: 1rem;
+  --padding-grand: 2rem;
+  --marge-section: 3rem;
+  --rayon-bordure: 2rem; /* boutons tres arrondis */
+}

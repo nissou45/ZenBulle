@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Se connecter</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Edu+SA+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/js/page-te-connecter.js" defer></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/page-te-connecter.css" />
+  </head>
+
+  <body>
+    <!-- Bulles statiques -->
+    <div class="static-bubbles">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+      <div class="bubble b4"></div>
+    </div>
+
+    <!-- Bulles animées -->
+    <div class="bubbles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- HEADER -->
+    <header class="top-bar">
+      <div class="logo">ZenBulle</div>
+      <a href="menu.html" class="menu">menu</a>
+    </header>
+
+    <!-- CONTENU -->
+    <main class="main-content">
+      <h2 class="texte">se connecter</h2>
+
+      <form class="connexion">
+        <div class="formulaire">
+          <input
+            type="email"
+            name="email"
+            placeholder="adresse e-mail"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="mot de passe"
+            required
+          />
+        </div>
+
+        <button class="btn-submit">connexion</button>
+      </form>
+    </main>
+  </body>
+</html>

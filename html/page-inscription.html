@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZenBulle — Inscription</title>
+
+    <!-- Polices -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Edu+SA+Beginner:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/page-inscription.css" />
+
+    <!-- JS -->
+    <script src="/js/page-inscription.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bulles statiques -->
+    <div class="static-bubbles">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+      <div class="bubble b4"></div>
+    </div>
+
+    <!-- Bulles animées -->
+    <div class="bubbles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <main class="inscription-container">
+      <div class="form-header">
+        <h1 class="titre-principal">s'inscrire</h1>
+        <p class="texte-slogan">
+          crée ta bulle en quelques secondes<br />juste pour toi...
+        </p>
+      </div>
+
+      <form class="form-inscription">
+        <input type="text" name="prenom" placeholder="prénom" required />
+        <input type="email" name="email" placeholder="e-mail" required />
+        <input
+          type="password"
+          name="motdepasse"
+          placeholder="mot de passe"
+          required
+        />
+        <input
+          type="password"
+          name="confirmation"
+          placeholder="confirme ton mot de passe"
+          required
+        />
+
+        <button type="submit">créer ma bulle</button>
+      </form>
+
+      <div class="footer">
+        <p class="connexion">
+          déjà un compte ?
+          <a href="page-te-connecter.html">se connecter</a>
+        </p>
+      </div>
+    </main>
+
+    <!-- Notification ZenBulle -->
+    <div id="zenNotif" class="zen-notification"></div>
+  </body>
+</html>
