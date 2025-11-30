@@ -1,0 +1,222 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-principale);
+  background: var(--linear-gradient);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+}
+
+/* CONTENU */
+.invite-container {
+  text-align: center;
+  z-index: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.titre {
+  font-family: var(--font-titres);
+  color: var(--couleur-secondaire);
+  font-size: 1.5rem;
+}
+
+.texte {
+  font-size: 0.95rem;
+  color: var(--couleur-secondaire);
+  line-height: 1.4;
+}
+
+.btn-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+/* BOUTONS */
+.btn-zen {
+  width: 260px;
+  padding: 15px 20px;
+  border-radius: 40px;
+  background: linear-gradient(to bottom, #d3bca8, #c7b1a0, #bca898);
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  color: #4c4033;
+  font-family: var(--font-titres);
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15),
+    inset 0 0 6px rgba(255, 255, 255, 0.6);
+}
+
+/* -------- bulles animées -------- */
+.bubbles {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.bubbles span {
+  position: absolute;
+  bottom: -5%;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 30%,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.3),
+    transparent
+  );
+  backdrop-filter: blur(10px) saturate(180%);
+  animation: floatUp 6s infinite ease-in;
+}
+
+/* tailles */
+.bubbles span:nth-child(1) {
+  left: 10%;
+  width: 22px;
+  height: 22px;
+  animation-duration: 6s;
+}
+.bubbles span:nth-child(2) {
+  left: 30%;
+  width: 15px;
+  height: 15px;
+  animation-duration: 5s;
+}
+.bubbles span:nth-child(3) {
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  animation-duration: 7s;
+}
+.bubbles span:nth-child(4) {
+  left: 70%;
+  width: 14px;
+  height: 14px;
+  animation-duration: 4.5s;
+}
+.bubbles span:nth-child(5) {
+  left: 90%;
+  width: 20px;
+  height: 20px;
+  animation-duration: 6s;
+}
+.bubbles span:nth-child(6) {
+  left: 25%;
+  width: 18px;
+  height: 18px;
+  animation-duration: 5.8s;
+}
+.bubbles span:nth-child(7) {
+  left: 60%;
+  width: 12px;
+  height: 12px;
+  animation-duration: 4s;
+}
+.bubbles span:nth-child(8) {
+  left: 80%;
+  width: 30px;
+  height: 30px;
+  animation-duration: 8s;
+}
+.bubbles span:nth-child(9) {
+  left: 40%;
+  width: 16px;
+  height: 16px;
+  animation-duration: 5.4s;
+}
+.bubbles span:nth-child(10) {
+  left: 55%;
+  width: 22px;
+  height: 22px;
+  animation-duration: 6.3s;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(-130vh) scale(1.3);
+    opacity: 0;
+  }
+}
+
+/* -------- bulles statiques -------- */
+.static-bubbles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.static-bubbles .bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 35% 35%,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.4),
+    transparent
+  );
+  box-shadow: 0 0 35px rgba(255, 200, 160, 0.4),
+    inset 0 0 25px rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+}
+
+.bubble.b1 {
+  width: 140px;
+  height: 140px;
+  top: 20%;
+  left: 12%;
+}
+/* Grande bulle haut gauche — reculée */
+.bubble.b1 {
+  width: 160px;
+  height: 160px;
+  top: 10%; /* plus haut */
+  left: 5%; /* plus sur le côté */
+}
+
+/* Moyenne bulle haut droite — reculée encore plus */
+.bubble.b2 {
+  width: 110px;
+  height: 110px;
+  top: 18%; /* plus haut */
+  right: 6%; /* plus à droite */
+}
+
+/* Petite bulle milieu gauche — éloignée du bouton */
+.bubble.b3 {
+  width: 55px;
+  height: 55px;
+  top: 62%; /* plus bas */
+  left: 12%; /* plus éloignée du centre */
+}
+
+/* Petite bulle bas droite — éloignée du footer */
+.bubble.b4 {
+  width: 34px;
+  height: 34px;
+  bottom: 12%; /* un peu plus haut */
+  right: 18%; /* reculée du centre */
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Émotion du jour</title>
+
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/emotion-du-jour.css" />
+    <script src="/js/emotion-du-jour.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bulles animées -->
+    <div class="bubbles">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <!-- Bulles décoratives -->
+    <div class="static-bubbles">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+    </div>
+
+    <main class="container">
+      <h1 class="titre-emotion">
+        Avant de t’envoyer ta citation de ce soir...
+      </h1>
+
+      <p class="texte-explication">
+        dis-moi comment tu t’es senti(e) aujourd’hui ?
+      </p>
+
+      <!-- Émotions -->
+      <div class="emotions-container">
+        <div class="emotion-bubble" data-label="Triste" data-emotion="triste">
+          <img src="/assets/triste.png" alt="Triste" />
+        </div>
+
+        <div class="emotion-bubble" data-label="Anxieux" data-emotion="anxieux">
+          <img src="/assets/anxieux.png" alt="Anxieux" />
+        </div>
+
+        <div class="emotion-bubble" data-label="Fatigué" data-emotion="fatigue">
+          <img src="/assets/fatigue.png" alt="Fatigué" />
+        </div>
+
+        <div class="emotion-bubble" data-label="Joie" data-emotion="joie">
+          <img src="/assets/joie.png" alt="Joie" />
+        </div>
+
+        <div class="emotion-bubble" data-label="Calme" data-emotion="calme">
+          <img src="/assets/calme.png" alt="Calme" />
+        </div>
+      </div>
+
+      <p class="texte-bas">toutes les émotions ont quelque chose à dire…</p>
+    </main>
+  </body>
+</html>
