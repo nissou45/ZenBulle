@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Respiration guidée</title>
+
+    <link rel="stylesheet" href="/css/variables.css" />
+    <link rel="stylesheet" href="/css/respiration-guidee.css" />
+    <script src="/js/respiration-guidee.js" defer></script>
+  </head>
+
+  <body>
+    <!-- Bulles statiques -->
+    <div class="static-bubbles">
+      <div class="bubble b1"></div>
+      <div class="bubble b2"></div>
+      <div class="bubble b3"></div>
+    </div>
+
+    <!-- Bulles animées -->
+    <div class="bubbles">
+      <span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- CONTENU PRINCIPAL -->
+    <main class="container">
+      <h1 class="respiration-titre">respiration guidée</h1>
+
+      <p class="respiration-description">
+        Inspire quand la bulle grandit, expire quand elle se referme.
+      </p>
+
+      <div class="bulle-container">
+        <div class="bulle-animation"></div>
+      </div>
+
+      <p class="texte-phase">Inspire...</p>
+
+      <p class="timer">1:00</p>
+
+      <button class="btn-reset">recommencer</button>
+    </main>
+
+    <div id="bubble-popup"></div>
+  </body>
+</html>

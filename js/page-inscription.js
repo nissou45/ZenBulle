@@ -1,5 +1,21 @@
-const form = document.querySelector(".form-inscription");
+function showPopup(message) {
+  const popup = document.getElementById("bubble-popup");
+  popup.textContent = message;
+  popup.classList.add("active");
 
+  setTimeout(() => {
+    popup.classList.remove("active");
+  }, 2500);
+}
+
+const form = document.querySelector(".form-inscription");
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // Exemple : future logique de validation
+
+  showPopup(" Bienvenue dans ta bulle !");
+});
 // Sélecteur de la bulle-notification
 const notif = document.createElement("div");
 notif.className = "bubble-notif";

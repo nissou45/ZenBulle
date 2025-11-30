@@ -1,8 +1,24 @@
 //      PAGE : SE CONNECTER
+function showPopup(message) {
+  const popup = document.getElementById("bubble-popup");
+  popup.textContent = message;
+  popup.classList.add("active");
+
+  setTimeout(() => {
+    popup.classList.remove("active");
+  }, 2500);
+}
 
 // Je récupère le formulaire
 const form = document.querySelector(".connexion");
 
+form.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  // logique de connexion à venir
+
+  showPopup("✨ Heureuse de te revoir !");
+});
 // Je crée un petit message d’erreur (injecté si besoin)
 const errorMsg = document.createElement("p");
 errorMsg.style.color = "#b33";
