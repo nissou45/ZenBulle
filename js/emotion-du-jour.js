@@ -4,8 +4,10 @@ emotions.forEach((item) => {
   item.addEventListener("click", () => {
     const emotionChoisie = item.dataset.emotion;
 
+    // stocker l'émotion choisie
     localStorage.setItem("emotionDuJour", emotionChoisie);
 
-    window.location.href = "carte-du-soir.html";
+    // redirection selon l'émotion
+    window.location.href = `/html/emotion-${emotionChoisie}.html`;
   });
 });

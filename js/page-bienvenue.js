@@ -1,34 +1,22 @@
-// BUBBLE POPUP
-console.log("JS CHARGÉ !");
+console.log("Page bienvenue chargée");
 
-function showPopup(message) {
-  const popup = document.getElementById("bubble-popup");
-  popup.textContent = message;
-  popup.classList.add("active");
+// Sélection des boutons
+const boutons = document.querySelectorAll(".btn-zen");
 
-  setTimeout(() => {
-    popup.classList.remove("active");
-  }, 2000);
-}
+boutons.forEach((btn) => {
+  const texte = btn.textContent.trim().toLowerCase();
 
-// BOUTONS PAGE BIENVENUE
-document.querySelectorAll(".btn-zen").forEach((btn) => {
   btn.addEventListener("click", () => {
-    const action = btn.dataset.action;
-
-    if (action === "respiration") {
-      // showPopup("Respire… je t’accompagne.");
+    if (texte === "respirer") {
       window.location.href = "respiration-guidee.html";
     }
 
-    if (action === "emotion") {
-      // showPopup("On explore ton émotion du jour.");
+    if (texte === "émotion du jour") {
       window.location.href = "emotion-du-jour.html";
     }
 
-    if (action === "journal") {
-      // showPopup("Dépose ce que tu ressens…");
-      window.location.href = "page-accueil.html";
+    if (texte === "journal du soir") {
+      window.location.href = "journal-du-soir.html";
     }
   });
 });

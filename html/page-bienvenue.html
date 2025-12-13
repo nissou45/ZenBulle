@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZenBulle — Bienvenue</title>
+    <title>ZenBulle — Bienvenue (invité)</title>
 
     <link rel="stylesheet" href="../css/variables.css" />
-    <link rel="stylesheet" href="../css/page-bienvenue.css" />
+    <link rel="stylesheet" href="../css/page-invite.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Edu+SA+Beginner:wght@400..700&display=swap"
       rel="stylesheet"
     />
-    <script src="../js/page-bienvenue.js" defer></script>
+    <script src="../js/page-bienvenue.js" type="module"></script>
   </head>
 
   <body>
@@ -40,13 +40,10 @@
       </p>
 
       <div class="btn-group">
-        <button class="btn-zen" data-action="respiration">respirer</button>
-        <button class="btn-zen" data-action="emotion">émotion du jour</button>
-        <button class="btn-zen" data-action="journal">journal du soir</button>
+        <button class="btn-zen">respirer</button>
+        <button class="btn-zen">émotion du jour</button>
+        <button class="btn-zen">journal du soir</button>
       </div>
     </main>
-
-    <!-- Popup -->
-    <div id="bubble-popup"></div>
   </body>
 </html>

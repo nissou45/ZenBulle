@@ -1,38 +1,34 @@
-// BUBBLE POPUP
-function showPopup(message) {
-  const popup = document.getElementById("bubble-popup");
-  popup.textContent = message;
-  popup.classList.add("active");
+// Boutons d'actions
+const btnsZen = document.querySelectorAll(".btn-zen");
+const btnInvite = document.querySelector(".btn-invite");
 
-  setTimeout(() => {
-    popup.classList.remove("active");
-  }, 2500);
-}
-
-// BOUTONS INVITÉ
-document.querySelectorAll(".zen-btn").forEach((btn) => {
+// --- BOUTONS RESPIRER / ÉMOTION / JOURNAL ---
+btnsZen.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const action = btn.dataset.action;
+    const action = btn.textContent.trim().toLowerCase();
 
-    if (action === "respiration") {
-      showPopup(" Respire… je t’accompagne.");
-      // redirection future :
-      // window.location.href = "/html/page-respiration.html";
+    if (action === "respirer") {
+      window.location.href = "respiration-guidee.html";
     }
 
-    if (action === "emotion") {
-      showPopup(" On explore ton émotion du jour.");
+    if (action === "émotion du jour") {
+      window.location.href = "emotion-du-jour.html";
     }
 
-    if (action === "journal") {
-      showPopup(" Dépose ce que tu ressens…");
+    if (action === "journal du soir") {
+      window.location.href = "journal-du-soir.html";
     }
   });
 });
 
-// BOUTON CONTINUER EN INVITÉ
-document.querySelector(".btn-continuer").addEventListener("click", () => {
-  showPopup(" Tu continues en invité");
-  // futur redirection:
-  // window.location.href = "/html/page-accueil.html";
+// --- BOUTON CONTINUER (EN INVITÉ) ---
+btnInvite.addEventListener("click", () => {
+  const guestUser = {
+    name: "Invité",
+    mode: "guest",
+    connected: true,
+  };
+
+  localStorage.setItem("zenbulleUser", JSON.stringify(guestUser));
+  window.location.href = "page-accueil.html";
 });

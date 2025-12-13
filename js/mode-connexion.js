@@ -6,7 +6,7 @@ const btnInvite = document.querySelector(".btn-invite");
 // se connecter
 btnConnexion.addEventListener("click", (e) => {
   e.preventDefault();
-  window.location.href = "page-connexion.html";
+  window.location.href = "page-te-connecter.html";
 });
 
 // s'inscrire
@@ -27,5 +27,5 @@ btnInvite.addEventListener("click", (e) => {
 
   localStorage.setItem("zenbulleUser", JSON.stringify(guestUser));
 
-  window.location.href = "page-accueil.html";
+  window.location.href = "page-invite.html";
 });

@@ -54,5 +54,5 @@ form.addEventListener("submit", function (event) {
   setCookie("isLoggedIn", "true", 2); // 2 jours
 
   // Redirection
-  window.location.href = "menu.html";
+  window.location.href = "html/page-connexion.html";
 });
