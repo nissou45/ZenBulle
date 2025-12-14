@@ -1,5 +1,5 @@
 :root {
-  /* 🎨 Couleurs */
+  /*  Couleurs */
   --couleur-primaire: #c7ab9b;
   --couleur-secondaire: #d09e61;
   --couleur-texte: #a85100;
@@ -7,21 +7,35 @@
   --couleur-claire: white;
   --linear-gradient: linear-gradient(white 60%, #e3d5cd 81%, #c7ab9b);
 
-  /* ✍️ Polices */
+  /* Polices */
   --font-principale: "Edu SA Beginner", cursive;
   --font-titres: "Caveat Brush", cursive;
 
-  /* 🔠 Tailles de police */
+  /* Tailles de police */
 
   --taille-texte: 1em; /* ≈ 16px */
   --taille-titre: 3rem; /* ≈ 32px */
   --taille-sous-titre: 2rem; /* ≈ 24px */
   --taille-petit-texte: 0.875rem; /* ≈ 14px */
 
-  /* 📏 Espacements (padding / margin) */
+  /*  Espacements (padding / margin) */
   --padding-petit: 0.5rem;
   --padding-moyen: 1rem;
   --padding-grand: 2rem;
   --marge-section: 3rem;
   --rayon-bordure: 2rem; /* boutons tres arrondis */
+}
+.menu-btn {
+  position: absolute;
+  top: 1.2rem;
+  right: 1rem;
+  text-decoration: none;
+  font-family: var(--font-titres);
+  font-size: 0.9rem;
+  padding: 6px 14px;
+  color: #8b7765;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }

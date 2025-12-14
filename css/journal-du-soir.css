@@ -49,7 +49,7 @@ body {
 }
 
 .journal-textarea:focus {
-  border-color: var(--beige-fonce);
+  border-color: var(--couleur-secondaire);
 }
 
 /* --- Bulles flottantes --- */
